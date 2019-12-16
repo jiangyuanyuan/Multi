@@ -1,0 +1,37 @@
+apply plugin: 'maven'
+
+def getReleaseRepositoryUrl() {
+    return "http://127.0.0.1:8080/repository/maven-public/"//maven 私服地址
+}
+
+def getSnapshotRepositoryUrl() {
+    return "http://127.0.0.1:8080/repository/maven-snapshots/"//maven 私服地址
+}
+
+def getRepositoryUsername() {
+    return 'admin' //maven 账号
+}
+
+def getRepositoryPassword() {
+        return 'admin'//maven 密码
+}
+
+def pomName = this.getName()
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: getReleaseRepositoryUrl()) {
+                authentication(userName: getRepositoryUsername(), password: getRepositoryPassword())
+            }
+            snapshotRepository(url: getSnapshotRepositoryUrl()) {
+                authentication(userName: getRepositoryUsername(), password: getRepositoryPassword())
+            }
+            pom.groupId = "com.demo.android"
+            pom.artifactId = "i18"
+            pom.version = "1.0.0-SNAPSHOT"
+            pom.name = pomName
+            pom.packaging = 'aar'
+        }
+    }
+}

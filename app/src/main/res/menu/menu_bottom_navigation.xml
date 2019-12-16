@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_home"
+        android:icon="@drawable/abc_vector_test"
+        android:title="订单" />
+    <item
+        android:id="@+id/item_quotation"
+        android:icon="@drawable/abc_vector_test"
+        android:title="登录" />
+
+</menu>

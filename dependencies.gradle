@@ -1,0 +1,138 @@
+ext {
+    versionCode = 1
+    versionName = "1.0"
+
+    minSdkVersion = 19
+    targetSdkVersion = 29
+    compileSdkVersion = 29
+    buildToolsVersion = "29.0.2"
+
+
+    // kotlin
+    kotlin_version = '1.3.50'
+    anko_version = '0.10.8'
+    rxjava_version = '2.2.9'
+
+    // dependency
+    junit_version = '4.12'
+    koin_version = '2.0.1'
+    lifecycle_version = '2.0.0'
+    rxandroid_version = '2.0.2'
+    retrofit_version = '2.4.0'
+    gson_version = '2.8.5'
+    glide_version = '4.4.0'
+    leakcanary_version = '1.6.2'
+
+
+    junit = "junit:junit:$junit_version"
+    kotlinjdk8 = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    ankocommons = "org.jetbrains.anko:anko-commons:$anko_version"
+    ankodesign = "org.jetbrains.anko:anko-design:$anko_version"
+    ktx = 'androidx.core:core-ktx:1.0.2'
+
+    // Support
+    appcompat = 'androidx.appcompat:appcompat:1.1.0'
+    material = 'com.google.android.material:material:1.0.0'
+    recyclerview = 'androidx.recyclerview:recyclerview:1.0.0'
+    constraintlayout = 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+    recyclerviewAnimators              ='jp.wasabeef:recyclerview-animators:3.0.0'
+
+    lifecycleextensions = "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    lifecyclecommon = "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+
+    // Paging
+    pagingruntime = "androidx.paging:paging-runtime:2.1.0"
+    pagingrxjava2 = "androidx.paging:paging-rxjava2:2.1.0"
+
+    // koin
+    koincore = "org.koin:koin-core:$koin_version"
+    koinandroid = "org.koin:koin-android:$koin_version"
+    androidviewmodel = "org.koin:koin-android-viewmodel:$koin_version"
+
+    // RxJava 2
+    rxjava = "io.reactivex.rxjava2:rxjava:$rxjava_version"
+    rxandroid = "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+    liveeventbus = "com.jeremyliao:live-event-bus-x:1.5.2"
+
+    // Retrofit
+    retrofit2 = "com.squareup.retrofit2:retrofit:$retrofit_version"
+    retrofit2gsonconverter = "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    retrofit2adapter = "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
+    retrofit2logging = "com.squareup.okhttp3:logging-interceptor:3.5.0"
+
+//    implementation "com.google.code.gson:gson:$gson_version"
+//    implementation "com.github.bumptech.glide:glide:$glide_version"
+
+    glide = "com.github.bumptech.glide:glide:4.9.0"
+    glidecompiler = "com.github.bumptech.glide:compiler:4.9.0"
+
+    //单activity 多fragment 架子  基础库
+    fragmentation = "me.yokeyword:fragmentationx:1.0.1"
+    fragmentationswipeback = "me.yokeyword:fragmentationx-swipeback:1.0.1"
+
+    //路由 模块化
+    arouter                         = "com.alibaba:arouter-api:1.3.1"
+    arouterCompiler                 = "com.alibaba:arouter-compiler:1.1.4"
+
+    //权限
+    permissionsdispatcher = "com.github.hotchemi:permissionsdispatcher:3.2.0"
+    permissionsdispatcherprocessor = "com.github.hotchemi:permissionsdispatcher-processor:3.2.0"
+
+    // 持久化
+    hawk = "com.orhanobut:hawk:2.0.1"
+    //适配
+    autosize = "me.jessyan:autosize:1.0.6"
+
+    //二维码
+    zxing = "cn.yipianfengye.android:zxing-library:2.2"//扫码
+
+    //下载更新
+    MNUpdateAPK = "com.github.maning0303:MNUpdateAPK:V2.0.3"//下载
+
+
+    //轮播
+    banner = "com.youth.banner:banner:1.4.10"
+
+    //动画
+    lottie = "com.airbnb.android:lottie:2.5.5"
+
+    zopimchat = 'com.zopim.android:sdk:1.4.1'
+
+    // LeakCanary
+    leakcanary = "com.squareup.leakcanary:leakcanary-android:$leakcanary_version"
+    leakcanaryandroidopop = "com.squareup.leakcanary:leakcanary-android-no-op:$leakcanary_version"
+
+    //bugly
+    multidex = "androidx.multidex:multidex:2.0.1"
+    crashreportupgrade = 'com.tencent.bugly:crashreport_upgrade:1.3.6'
+    nativecrashreport = 'com.tencent.bugly:nativecrashreport:3.3.1'
+    tinker = 'com.tencent.tinker:tinker-android-lib:1.9.9'
+
+    //GSYVideoPlayer 播放器
+    GSYVideoPlayer = 'com.shuyu:GSYVideoPlayer:7.1.0'
+
+    //webview进度条
+    coolindicator = 'com.coolindicator.sdk:coolindicator:1.0.0-beta'
+
+    // 刷新加载
+    smartRefresh = 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'
+    //汉字转拼音
+    Pinyin4j = "com.belerweb:pinyin4j:2.5.1"
+    swipeMenu = "com.yanzhenjie.recyclerview:x:1.3.2"
+    PictureSelector = 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.9'
+
+    //换肤
+    changeskin = 'com.zhy:changeskin:3.0.0'
+
+    crosswall                       ='com.github.crosswall:Android-Coverflow:release-v1.0.5'
+
+    flowlayout = 'com.nex3z:flow-layout:1.2.4'//流式布局
+
+
+    mobileHardware                  = 'fairy.easy:mobilehardware:2.2.2'
+
+    roundedImageView = 'com.makeramen:roundedimageview:2.3.0'
+    luban = 'top.zibin:Luban:1.1.8'
+
+}

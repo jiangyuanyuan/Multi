@@ -1,0 +1,94 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+androidExtensions {
+    experimental = true
+}
+kapt {
+    correctErrorTypes = true
+    arguments {
+        arg("moduleName", project.getName())
+    }
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation project(':i18')
+    implementation project(':router')
+
+    testImplementation rootProject.ext.junit
+    api rootProject.ext.kotlinjdk8
+    api rootProject.ext.ankocommons
+    api rootProject.ext.ankodesign
+    api rootProject.ext.ktx
+
+    // Support
+    api rootProject.ext.appcompat
+    api rootProject.ext.material
+    api rootProject.ext.recyclerview
+    api rootProject.ext.constraintlayout
+    api rootProject.ext.recyclerviewAnimators
+
+    // architecture component
+    api rootProject.ext.lifecycleextensions
+    api rootProject.ext.lifecyclecommon
+
+    // koin
+    api rootProject.ext.koincore
+    api rootProject.ext.koinandroid
+    api rootProject.ext.androidviewmodel
+
+    // RxJava 2
+    api rootProject.ext.rxjava
+    api rootProject.ext.rxandroid
+    //bus
+    api rootProject.ext.liveeventbus
+
+    // Retrofit
+    api rootProject.ext.retrofit2
+    api rootProject.ext.retrofit2gsonconverter
+    api rootProject.ext.retrofit2adapter
+    api rootProject.ext.retrofit2logging
+
+
+    // ARouter
+    api rootProject.ext.arouter
+    kapt rootProject.ext.arouterCompiler
+
+
+}
+apply from: 'gradle-mvn-push.gradle'//maven 私服脚本
