@@ -3,9 +3,10 @@ package com.demo.order.ui
 import androidx.lifecycle.Observer
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.demo.base.data.UserInfo
+import com.demo.order.R
 import com.demo.order.common.OrderBaseFragment
 import com.demo.router.LOGIN_SUCCESS
-import com.demo.user.R
+
 import com.demo.router.RouterPath
 import com.jeremyliao.liveeventbus.LiveEventBus
 import org.jetbrains.anko.toast

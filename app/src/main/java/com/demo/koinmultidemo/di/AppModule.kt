@@ -8,6 +8,7 @@ import com.demo.base.net.okhttp
 import com.demo.base.net.retrofit
 import com.demo.koinmultidemo.App
 import com.demo.koinmultidemo.data.HomeApi
+import com.demo.koinmultidemo.data.HomeApiViewModel
 import okhttp3.Call
 import org.koin.android.viewmodel.dsl.viewModel
 import org.koin.dsl.module
@@ -21,5 +22,5 @@ val appModule = module {
 
     single { get<Retrofit>().create(HomeApi::class.java) }
 
-    viewModel { ApiViewModel(get()) }
+    viewModel { HomeApiViewModel(get()) }
 }
