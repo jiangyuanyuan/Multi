@@ -3,7 +3,7 @@ package com.demo.order
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.demo.base.common.BaseFragment
 import com.demo.router.JumpUtils
-import com.demo.user.R
+
 import com.demo.router.RouterPath
 
 

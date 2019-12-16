@@ -3,6 +3,7 @@ import android.app.Application
 import com.alibaba.android.arouter.launcher.ARouter
 import com.demo.base.di.baseModule
 import com.demo.koinmultidemo.di.appModule
+import com.demo.order.di.orderModule
 import com.demo.user.di.userModule
 import com.jeremyliao.liveeventbus.LiveEventBus
 import me.yokeyword.fragmentation.Fragmentation
@@ -44,7 +45,8 @@ class App : Application() {
             modules(listOf(
                 appModule,
                 baseModule,
-                userModule
+                userModule,
+                orderModule
             ))
         }
     }

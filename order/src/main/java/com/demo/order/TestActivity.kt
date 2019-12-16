@@ -4,7 +4,7 @@ import android.os.Bundle
 import com.demo.base.common.BaseActivity
 import com.demo.router.JumpUtils
 import com.demo.router.RouterPath
-import com.demo.user.R
+
 
 
 class TestActivity : BaseActivity() {
