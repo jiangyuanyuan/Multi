@@ -16,5 +16,10 @@ setting.gradle 确保有模块名，gradle.properties中加入是否是APP的变
 新建自己的fragment,在router模块中定义fragment的访问路径，i18中定义国际化资源，data目录下定义接口、业务bean,
 Bus事件用于不同页面、不同模块通讯
 
+###  2022年2月10日更新：
+请废弃掉单Activity+多fragment  因为它是一坨屎
+
+
+
 
 
